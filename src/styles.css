@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+  background: red;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#card {
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+}
+.fita {
+  width: 150px;
+  height: 150px;
+  /* background-color: red; */
+  position: absolute;
+  inset: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.fita::before {
+  position: absolute;
+  content: "ARZ PRINTS";
+  width: 150%;
+  height: 30%;
+  background-color: blue;
+  transform: rotate(-45deg) translateY(-23px);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color:white;
+
+}
+.fita::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: darkblue;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  box-shadow: 140px -140px 0 darkblue;
+}
